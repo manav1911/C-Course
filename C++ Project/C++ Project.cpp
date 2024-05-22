@@ -12,10 +12,10 @@ int main() {
 	int b = 0;
 	int sum = 0;
 
-	cout << "Enter the first number: " << endl;
+	cout << "Enter your first number: " << endl;
 	cin >> a;
 
-	cout << "Enter the second number: " << endl;
+	cout << "Enter your second number: " << endl;
 	cin >> b;
 
 
