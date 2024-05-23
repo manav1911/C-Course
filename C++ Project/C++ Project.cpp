@@ -1,27 +1,35 @@
-//Write a program to print the sum of the two numbers
+//Write a program to calculate the sum and average of 4 numbers
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	/*
-	There are two approaches to writing variable and below are two of them:
-	int var1 = 10, var2 = 20;
-	*/
 	int a = 0;
 	int b = 0;
+	int c = 0;
+	int d = 0;
 	int sum = 0;
+	int avg = 0;
 
-	cout << "Enter the first number: " << endl;
+	//User input
+	cout << "Enter the value of first number: ";
 	cin >> a;
 
-	cout << "Enter the second number: " << endl;
+	cout << "Enter the value of second number: ";
 	cin >> b;
 
+	cout << "Enter the value of third number: ";
+	cin >> c;
 
-	sum = a + b;
-	cout << "The sum of the two numbers is: " << sum;
+	cout << "Enter the value of fourth number: ";
+	cin >> d;
 
+	//Calculation
+	sum = a + b + c + d;
+	cout << "The sum of the four numbers is: " << sum << endl;
+
+	avg = sum / 4;
+	cout << "The average of the four numbers is: " << avg << endl;
 
 	return 0;
 }
