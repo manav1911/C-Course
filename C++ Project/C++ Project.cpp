@@ -1,27 +1,23 @@
-//Write a program to print the sum of the two numbers
+//Write a program to print the first and last number in a three digit number.
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	/*
-	There are two approaches to writing variable and below are two of them:
-	int var1 = 10, var2 = 20;
-	*/
-	int a = 0;
-	int b = 0;
-	int sum = 0;
+	int num = 0;
+	int first = 0;
+	int last = 0;
 
-	cout << "Enter the first number: " << endl;
-	cin >> a;
+	//User Input
+	cout << "Enter the number: ";
+	cin >> num;
 
-	cout << "Enter the second number: " << endl;
-	cin >> b;
+	//Printing the first and last numbers
+	first = num / 100;
+	cout << "The first number is: " << first << endl;
 
-
-	sum = a + b;
-	cout << "The sum of the two numbers is: " << sum;
-
+	last = num % 10;
+	cout << "The last number is: " << last << endl;
 
 	return 0;
 }
