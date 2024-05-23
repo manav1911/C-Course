@@ -1,26 +1,25 @@
-//Write a program to print the sum of the two numbers
+//Write a program to that takes a number as input and prints its multiplication table upto 10
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	/*
-	There are two approaches to writing variable and below are two of them:
-	int var1 = 10, var2 = 20;
-	*/
-	int a = 0;
-	int b = 0;
-	int sum = 0;
+	int num = 0;
+	
+	//User Input
+	cout << "Enter the number: ";
+	cin >> num;
 
-	cout << "Enter the first number: " << endl;
-	cin >> a;
-
-	cout << "Enter the second number: " << endl;
-	cin >> b;
-
-
-	sum = a + b;
-	cout << "The sum of the two numbers is: " << sum;
+	cout << num << "*" << "1" << "=" << num * 1 << endl;
+	cout << num << "*" << "2" << "=" << num * 2 << endl;
+	cout << num << "*" << "3" << "=" << num * 3 << endl;
+	cout << num << "*" << "4" << "=" << num * 4 << endl;
+	cout << num << "*" << "5" << "=" << num * 5 << endl;
+	cout << num << "*" << "6" << "=" << num * 6 << endl;
+	cout << num << "*" << "7" << "=" << num * 7 << endl;
+	cout << num << "*" << "8" << "=" << num * 8 << endl;
+	cout << num << "*" << "9" << "=" << num * 9 << endl;
+	cout << num << "*" << "10" << "=" << num * 10 << endl;
 
 
 	return 0;
