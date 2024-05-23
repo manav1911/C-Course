@@ -1,27 +1,27 @@
-//Write a program to print the sum of the two numbers
+//Write a program to compute quotient and remainder
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	/*
-	There are two approaches to writing variable and below are two of them:
-	int var1 = 10, var2 = 20;
-	*/
-	int a = 0;
-	int b = 0;
-	int sum = 0;
+	int divident = 0;
+	int divisor = 0;
+	int quotient = 0;
+	int remainder = 0;
+	
+	//Take input fropm user
+	cout << "Enter the Divident number: ";
+	cin >> divident;
 
-	cout << "Enter the first number: " << endl;
-	cin >> a;
+	cout << "Enter the Divisor number: ";
+	cin >> divisor;
 
-	cout << "Enter the second number: " << endl;
-	cin >> b;
+	//Calculation
+	quotient = divident / divisor;
+	cout << "The quotient for the two numbers is: " << quotient << endl;
 
-
-	sum = a + b;
-	cout << "The sum of the two numbers is: " << sum;
-
+	remainder = divident % divisor;
+	cout << "The remainder for the two numbers is: " << remainder << endl;
 
 	return 0;
 }
