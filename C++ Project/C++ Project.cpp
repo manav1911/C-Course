@@ -1,27 +1,29 @@
-//Write a program to print the sum of the two numbers
+//Area to find area and perimeter of a triangle
+//A = l*B
+//Perimeter = 2(l+B)
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	/*
-	There are two approaches to writing variable and below are two of them:
-	int var1 = 10, var2 = 20;
-	*/
-	int a = 0;
-	int b = 0;
-	int sum = 0;
+	int length = 0;
+	int breadth = 0;
+	int area = 0;
+	int perimeter = 0;
 
-	cout << "Enter the first number: " << endl;
-	cin >> a;
+	//User Input
+	cout << "Enter the lenght: ";
+	cin >> length;
 
-	cout << "Enter the second number: " << endl;
-	cin >> b;
+	cout << "Enter the breadth: ";
+	cin >> breadth;
 
+	//Calculations
+	area = length * breadth;
+	cout << "The area of the triangle is: " << area << endl;
 
-	sum = a + b;
-	cout << "The sum of the two numbers is: " << sum;
-
+	perimeter = 2 * (length * breadth);
+	cout << "The perimeter of the triangle is: " << perimeter << endl;
 
 	return 0;
 }
