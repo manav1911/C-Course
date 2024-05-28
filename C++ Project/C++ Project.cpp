@@ -1,27 +1,16 @@
-//Write a program to print the sum of the two numbers
+//Example of Precedence & Associativity
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	/*
-	There are two approaches to writing variable and below are two of them:
-	int var1 = 10, var2 = 20;
-	*/
-	int a = 0;
-	int b = 0;
-	int sum = 0;
+	int a = 10;
+	int b = 20;
+	int c = 30;
+	float total;
 
-	cout << "Enter the first number: " << endl;
-	cin >> a;
-
-	cout << "Enter the second number: " << endl;
-	cin >> b;
-
-
-	sum = a + b;
-	cout << "The sum of the two numbers is: " << sum;
-
+	total = b++ - c-- + a;
+	cout << total;
 
 	return 0;
 }
