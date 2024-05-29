@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+void main() {
 	int a = 10;
 	int b = 20;
 	int c = 30;
@@ -11,6 +11,4 @@ int main() {
 
 	total = b++ - c-- + a;
 	cout << total;
-
-	return 0;
 }
