@@ -1,27 +1,20 @@
-//Write a program to print the sum of the two numbers
+//Write a program to check a number is in a range of 100 and 200
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	/*
-	There are two approaches to writing variable and below are two of them:
-	int var1 = 10, var2 = 20;
-	*/
 	int a = 0;
-	int b = 0;
-	int sum = 0;
 
-	cout << "Enter the first number: " << endl;
+	cout << "Enter your number: ";
 	cin >> a;
 
-	cout << "Enter the second number: " << endl;
-	cin >> b;
-
-
-	sum = a + b;
-	cout << "The sum of the two numbers is: " << sum;
-
+	if (a >= 100 && a <= 200) {
+		cout << "The number is in range of 100:200.";
+	}
+	else {
+		cout << "The number is out of range of 100:200.";
+	}
 
 	return 0;
 }
