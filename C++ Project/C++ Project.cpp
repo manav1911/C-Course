@@ -1,27 +1,30 @@
-//Write a program to print the sum of the two numbers
+//Write a program to check the largest number among three given numbers
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	/*
-	There are two approaches to writing variable and below are two of them:
-	int var1 = 10, var2 = 20;
-	*/
-	int a = 0;
-	int b = 0;
-	int sum = 0;
+	int num1 = 0, num2 = 0, num3 = 0;
 
-	cout << "Enter the first number: " << endl;
-	cin >> a;
+	cout << "Enter your first number: ";
+	cin >> num1;
+	cout << "Enter your second number: ";
+	cin >> num2;
+	cout << "Enter your third number: ";
+	cin >> num3;
 
-	cout << "Enter the second number: " << endl;
-	cin >> b;
-
-
-	sum = a + b;
-	cout << "The sum of the two numbers is: " << sum;
-
+	if (num1 > num2 && num1 > num3) {
+		cout << "The first number is the largest number.";
+	}
+	else if (num2 > num1 && num2 > num3) {
+		cout << "The second number is the largest number.";
+	}
+	else if (num3 > num2 && num3 > num1) {
+		cout << "The third number is the largest number.";
+	}
+	else {
+		cout << "The three numbers are equal.";
+	}
 
 	return 0;
 }
