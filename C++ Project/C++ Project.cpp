@@ -1,4 +1,4 @@
-//Write a program to check a number is odd or even
+//Write a program to check a number is a multiple of 3
 #include <iostream>
 
 using namespace std;
@@ -9,12 +9,12 @@ int main() {
 	cout << "Enter your number: ";
 	cin >> a;
 
-	if (a % 2 == 0) {
-		cout << "The number is even!";
+	if (a % 3 == 0) {
+		cout << "The number is a multiple of 3!";
 	}
 	else {
-		cout << "The number is odd!";
+		cout << "The number is not a multiple of 3!";
 	}
-	//
+	
 	return 0;
 }
