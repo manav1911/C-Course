@@ -7,7 +7,7 @@ int main() {
 	cout << "Enter your marks: ";
 	cin >> marks;
 
-	if (marks >= 60) {
+	if (marks >= 60 && marks <= 100) {
 		cout << "You have passed!";
 	}
 	else {
