@@ -15,6 +15,6 @@ int main() {
 	else {
 		cout << "The number is odd!";
 	}
-
+	//
 	return 0;
 }
