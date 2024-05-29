@@ -1,27 +1,23 @@
-//Write a program to print the sum of the two numbers
+//Write a program to check if the character entered is a vowel
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	/*
-	There are two approaches to writing variable and below are two of them:
-	int var1 = 10, var2 = 20;
-	*/
-	int a = 0;
-	int b = 0;
-	int sum = 0;
+	char mychar;
 
-	cout << "Enter the first number: " << endl;
-	cin >> a;
+	cout << "Enter a character: ";
+	cin >> mychar;
 
-	cout << "Enter the second number: " << endl;
-	cin >> b;
-
-
-	sum = a + b;
-	cout << "The sum of the two numbers is: " << sum;
-
+	if (mychar == 'a' || mychar == 'e' || mychar == 'i' || mychar == 'o' || mychar == 'u') {
+		cout << "The character is a vovel.";
+	}
+	else if (mychar == 'A' || mychar == 'E' || mychar == 'I' || mychar == 'O' || mychar == 'U') {
+		cout << "The character is a vovel.";
+	}
+	else {
+		cout << "The character is not a vowel.";
+	}
 
 	return 0;
 }
