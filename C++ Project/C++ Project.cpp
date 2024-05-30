@@ -30,6 +30,8 @@ int main() {
 	case 7:
 		cout << "Sunday";
 		break;
+	default:
+		cout << "Invalid number of day in a week is entered.";
 	}
 
 	return 0;
