@@ -1,27 +1,36 @@
-//Write a program to print the sum of the two numbers
 #include <iostream>
 
 using namespace std;
 
 int main() {
-	/*
-	There are two approaches to writing variable and below are two of them:
-	int var1 = 10, var2 = 20;
-	*/
-	int a = 0;
-	int b = 0;
-	int sum = 0;
+	int day = 0;
 
-	cout << "Enter the first number: " << endl;
-	cin >> a;
+	cout << "Enter the number of a day in a week (1-7): ";
+	cin >> day;
 
-	cout << "Enter the second number: " << endl;
-	cin >> b;
-
-
-	sum = a + b;
-	cout << "The sum of the two numbers is: " << sum;
-
+	switch (day) {
+	case 1:
+		cout << "Monday";
+		break;
+	case 2:
+		cout << "Tuesday";
+		break;
+	case 3:
+		cout << "Wednesday";
+		break;
+	case 4:
+		cout << "Thursday";
+		break;
+	case 5:
+		cout << "Friday";
+		break;
+	case 6:
+		cout << "Saturday";
+		break;
+	case 7:
+		cout << "Sunday";
+		break;
+	}
 
 	return 0;
 }
