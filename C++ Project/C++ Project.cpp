@@ -3,8 +3,14 @@
 #include<string>
 using namespace std;
 
-int main() {
+void fun(void);
 
+int main() {
+	fun();
 
 	return 0;
+}
+
+void fun() {
+	cout << "Hello World";
 }
