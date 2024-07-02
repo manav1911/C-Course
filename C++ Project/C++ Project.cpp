@@ -57,10 +57,17 @@ int main() {
 	Phone obj2(name, processor, RAM, battery);
 	Phone obj3(obj2);
 
-	cout << "The details of the phone you entered is: " << endl;
+	cout << endl << "The default values are: " << endl;
 	obj2.getData();
 	cout << " " << endl;
 
+	cout << "The details of the phone you entered are: " << endl;
+	obj2.getData();
+	cout << " " << endl;
+
+	cout << "The details of the phone you copied are: " << endl;
+	obj2.getData();
+	cout << " " << endl;
 
 	return 0;
 }
