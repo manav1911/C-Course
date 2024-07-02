@@ -29,9 +29,11 @@ int main() {
 	Person Jon(78);
 	++Jon;
 
-	Jon++;
+	Person Chris(52);
+	Chris++;
 
 	Jon.getData();
+	Chris.getData();
 
 	return 0;
 }
