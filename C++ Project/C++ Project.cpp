@@ -9,7 +9,7 @@ public:
 		cout << "Default constructor of base class." << endl;
 	}
 	base(int b) {
-		cout << "Para constructor of base class" << endl;
+		cout << "Para constructor of base class " << b << endl;
 	}
 };
 
@@ -19,7 +19,7 @@ public:
 		cout << "Default Constructor of Derived Class." << endl;
 	}
 	derived(int d) : base(d) {
-		cout << "Para Constructor of Derived Class." << endl;
+		cout << "Para Constructor of Derived Class." << d << endl;
 	}
 };
 
