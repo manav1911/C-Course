@@ -23,5 +23,7 @@ int main() {
 
 	cout << "Value is: " << ptr->getData();
 
+	delete ptr;
+
 	return 0;
 }
