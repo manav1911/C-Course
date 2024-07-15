@@ -3,8 +3,23 @@
 #include<string>
 using namespace std;
 
-int main() {
+class base {
+public:
+	virtual ~base() {
+		cout << "Base Class Destructor" << endl;
+	}
+};
 
+class derived : public base {
+public:
+	~derived() {
+		cout << "Derived Class Destructor" << endl;
+	}
+};
+
+int main() {
+	base* ptr = new derived;
+	delete ptr;
 
 	return 0;
 }
