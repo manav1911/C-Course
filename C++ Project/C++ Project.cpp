@@ -10,7 +10,7 @@ int main() {
 	fout.open("my.txt");
 
 	fout << "C++Course";
-
+	
 	fout.close();
 
 	return 0;
