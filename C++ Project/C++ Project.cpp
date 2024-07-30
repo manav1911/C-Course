@@ -24,6 +24,10 @@ int main() {
 	}
 	catch (string y) {
 		cout << y;
+
+	}
+	catch (...) {
+		cout << "Error Occured";
 	}
 
 	return 0;
